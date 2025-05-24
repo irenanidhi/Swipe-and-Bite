@@ -1,69 +1,89 @@
-# Welcome to your Lovable project
+# 🍽️ Swipe N' Bite — Discover Food Like Never Before
 
-## Project info
+**Swipe N' Bite** is a modern web application designed to revolutionize how users discover restaurants and dishes based on their location and preferences. Inspired by the swipe mechanism of dating apps, it turns food discovery into an engaging, social, and personalized experience.
 
-**URL**: https://lovable.dev/projects/a0993554-41a6-4f70-be8c-851d87334ac7
+## Project Overview
 
-## How can I edit this code?
+Swipe N' Bite allows users to:
+- Discover new dishes and restaurants with a swipe.
+- Save their favorite items to a personalized "Eat-list."
+- Interact with the food community via comments and likes in the Tweet section.
+- Get matched with fellow foodies through the innovative Food Cupid feature.
+- Receive intelligent food recommendations based on their preferences and saved items.
 
-There are several ways of editing your application.
+Built with a robust modern tech stack on both frontend and backend, the application is highly interactive, scalable, and ready for real-world deployment.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a0993554-41a6-4f70-be8c-851d87334ac7) and start prompting.
+## 🌟 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🔥 Swipe-Based Food Discovery
 
-**Use your preferred IDE**
+- Users can **swipe right** to save a dish to their **Eat-list** or **swipe left** to skip.
+- Each card displays:
+  - Image of the dish
+  - Name of the food item
+  - Restaurant details (name, address, timing)
+  - Google Maps & Zomato integration
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📂 Eat-list
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- A dedicated section that stores all food items liked (swiped right).
+- Users can revisit this list anytime and access full details of saved dishes.
+- Eat-list data is stored persistently for each user.
 
-Follow these steps:
+### 💬 Tweet Section
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- A comment thread below each dish where users can:
+  - Leave short reviews or "foodie tweets"
+  - Like and reply to others' comments
+  - Discover trending opinions and crowd-favorite items
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+> Highly liked comments and dishes influence food visibility and future recommendations.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### ❤️ Food Cupid (Social Discovery)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- If **two users swipe right** on the same dish **within a 5–10 minute window**, they get a **match notification**.
+- Upon mutual acceptance, users can chat directly within the app.
+- A fun, optional social feature to connect over shared taste — perfect for making foodie friends or more!
 
-**Edit a file directly in GitHub**
+> The Cupid tab allows users to accept/reject matches and manage chats.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 🔄 Personalized Food Recommendations
 
-**Use GitHub Codespaces**
+- The system analyzes:
+  - User's Eat-list items
+  - Liked Tweet interactions
+  - Dish categories and cuisine types
+- It then generates **smart suggestions** tailored to individual tastes.
+- Continuously improves using user feedback and interaction patterns.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 📍 Location-Based Discovery
 
-## What technologies are used for this project?
+- Upon login, users select their city/location.
+- Discovery feed and recommendations are tailored to local options.
+- Seamless integration with Google Maps for real-time directions.
 
-This project is built with .
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🛠️ Tech Stack
 
-## How can I deploy this project?
+### Frontend
+- **Framework**: React 18.3.1 with Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS, Shadcn UI, Tailwind Merge, Animate
+- **Routing**: React Router DOM
+- **Form Handling & Validation**: React Hook Form + Zod
+- **Data Handling**: React Query
+- **Components**: Lucide React, Embla Carousel, Recharts
+- **Notifications**: Sonner
+- **Date Utils**: date-fns
 
-Simply open [Lovable](https://lovable.dev/projects/a0993554-41a6-4f70-be8c-851d87334ac7) and click on Share -> Publish.
+### Backend 
+- **Database**: MongoDB
+- **API Architecture**: RESTful APIs
+- **User Data**: Profiles, preferences, saved items, chat history
+- **Matching Logic**: Time-window based match engine (Food Cupid)
+- **Recommendation Engine**: Collaborative filtering or tag-based suggestions
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
